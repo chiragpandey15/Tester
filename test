@@ -1,0 +1,25 @@
+
+subl Test_Case_Generator.cpp
+read a
+ 
+g++ Test_Case_Generator.cpp
+./a.out
+
+echo -n "Enter Brute Force File: "
+read brute_force
+
+echo -n "Enter File for testing: "
+read improved
+
+
+g++ $brute_force
+./a.out < TestCases > file1
+
+g++ $improved
+./a.out < TestCases > file2
+
+diff file1 file2 >result
+
+
+
+
