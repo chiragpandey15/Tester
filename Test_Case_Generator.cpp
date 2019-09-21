@@ -281,7 +281,7 @@ void String_array()
 	}
 }
 
-void TP()
+void custom()
 {
 	/*srand(time(0));
 	file<<10000<<"\n";
@@ -309,7 +309,7 @@ int main()
 	cin>>n;
 	if(n==0)
 	{
-		TP();
+		custom();
 	}
 	else if(n==1)
 	{
